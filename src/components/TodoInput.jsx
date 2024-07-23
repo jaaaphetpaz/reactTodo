@@ -1,8 +1,7 @@
 import { useState } from "react";
 
 export default function TodoInput(props) {
-  const { handleAddTodo } = props;
-  const [todoValue, setTodoValue] = useState("");
+  const { handleAddTodo, todoValue, setTodoValue } = props;
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
